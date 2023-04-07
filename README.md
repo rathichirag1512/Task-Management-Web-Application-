@@ -69,5 +69,13 @@ Personally I prefer to use Hyper-Terminal.
 
 As I recommend if you download as zip file and then extract it then you can directly copy paste the following command after completing the extraction of all files, to go to the project folder :
 
-  cd downloads/"Work-Organizer-main"/"Work-Organizer-main"
+ 
+ ```
+ cd downloads/"Work-Organizer-main"/"Work-Organizer-main"
+ ```
+ 
+ If it does not work then simply paste the path where all the files of this particular project folder are present after
+ 'doenloads/'
+
+ Then use the following command to install all the packages/ technologies used for this project:
 

@@ -78,4 +78,30 @@ As I recommend if you download as zip file and then extract it then you can dire
  'doenloads/'
 
  Then use the following command to install all the packages/ technologies used for this project:
+ 
+ ```
+  npm install 
+  OR
+  npm i
+ ```
+ 
+ Finally run the following command and the Web Application will start running on the port:3000
+ 
+ ```
+  nodemon app.js
+ ```
+ 
+ Hopefully if there are no erros then you will see the following message in your terminal/ console:
+ 
+ ```
+  Server has started successfully
+  
+ ```
+ 
+ Then go to your browser and head type
+ 
+ ```
+  localhost:3000
+ ```
+ And see the project running.
 

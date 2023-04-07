@@ -104,4 +104,34 @@ As I recommend if you download as zip file and then extract it then you can dire
   localhost:3000
  ```
  And see the project running.
+ 
+ # Demo Video
+ 
+ Here is the link to what all you cna do in this task-management Web Application: 
+ 
+ # Possible Errors
+ 
+ If you find error that some module, somwhere insdie "node-modules" folder is not found, in your terminal after
+ running:
+ 
+ ```
+ nodemon app.js
+ ```
+ 
+ Then just open the project in your code editor and comment you the part where that module is required only if you 
+ dont see any errors after doing so.
+
+If this command:
+
+```
+ nodemon app.js
+```
+
+Does not work then simply :
+
+```
+ npm i nodemon
+```
+
+And then agian run it.
 

@@ -133,5 +133,5 @@ Does not work then simply :
  npm i nodemon
 ```
 
-And then agian run it.
+And then again run it.
 

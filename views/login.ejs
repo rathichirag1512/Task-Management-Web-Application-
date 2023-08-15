@@ -1,0 +1,23 @@
+<%- include('partialsTwo/headerTwo') %>
+<div class="main formcontainer" >
+  <h1 style="color: black;">Login</h1>
+  <div >
+    <!-- Makes POST request to /login route -->
+    <form action="/login" method="POST">
+      <div class="formitem">
+        <label for="email" style="color: black;">Email</label>
+        <input type="email" name="username" autocomplete="off">
+      </div>
+      <div class="formitem">
+        <label for="password" style="color: black;">Password</label>
+        <input type="password" name="password">
+      </div>
+      <button class="button" type="submit" style="color: black;">Login</button>
+    </form>
+  </div>
+</div>
+<div>
+ <a href="/" class="button" style="color: rgb(255, 255, 255);border: 2px solid rgb(255, 255, 255);">Back</a>
+</div>
+
+<%- include('partialsTwo/footerTwo') %>

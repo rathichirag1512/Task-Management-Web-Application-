@@ -1,0 +1,70 @@
+<!-- <%- include('partials/header') -%>
+  
+  <div class="navigation">
+    <div class="back">
+      <a href="/list"><i class="fa fa-arrow-left"></i></a>
+    </div>
+    <div class="heading">
+      <h1>
+        <%= listTitle %>
+      </h1>
+    </div>
+  </div>
+  <div class="box">
+    <% newListItems.forEach(function(item){ %>
+      <form action="/delete-list" method="post">
+        <div class="item">
+          <input type="checkbox" name="checkbox" value="<%=item._id%>" onchange="this.form.submit()">
+          <p>
+            <%= item.name %>
+          </p>
+        </div>
+        <input type="hidden" name="listName" value="<%= listTitle %>"></input>
+      </form>
+      <% }) %>
+
+        <form class="item" action="/list" method="post">
+          <input class="task" type="text" name="newItem" placeholder="New Task" autocomplete="off">
+          <button type="submit" name="list" value="<%- listTitle %>">+</button>
+        </form>
+  </div>
+
+  <%- include("partials/footer") -%> -->
+
+  <%- include('partials/header') -%>
+  
+  <div class="navigation">
+    <div class="back">
+      <a href="/list"><i class="fa fa-arrow-left"></i></a>
+    </div>
+    <div class="heading">
+      <h1>
+        <%= listTitle %>
+      </h1>
+    </div>
+  </div>
+  <div class="box">
+    <% newListItems.forEach(function(item){ %>
+      <form action="/delete-list" method="post">
+        <div class="item">
+          <input type="checkbox" name="checkbox" value="<%=item._id%>" onchange="this.form.submit()">
+          <p>
+            <%= item.name %>
+          </p>
+        </div>
+        <input type="hidden" name="listName" value="<%= listTitle %>"></input>
+      </form>
+      <% }) %>
+
+        <form class="item" action="/list" method="post">
+          <input class="task" type="text" name="newItem" placeholder="New Task" autocomplete="off">
+        
+          <input class="datetime" name="alarm" type="text" id="alarm"  placeholder="yyyy-mm-dd 24hh:mm:ss">
+          <button type="submit" id="alarmSubmit" name="list" value="<%- listTitle %>">+</button>
+        </form>
+  </div>
+
+
+
+
+<%- include("partials/footer") -%>

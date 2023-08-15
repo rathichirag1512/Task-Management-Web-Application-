@@ -1,0 +1,49 @@
+<%- include("partials/header") -%>
+
+  <div class="navigation">
+    <div class="heading" style="padding-right: 8%;">
+      <h1>
+        <%= listTitle %>
+      </h1>
+    </div>
+    <div class="ghost">
+    <form  action="/search-task" method="post">
+        <div class="search-container">
+            <input type="text
+            " name="searchedTask" placeholder="Search task..." id="searchInput" autocomplete="off">
+            <button type="submit"><i class="fas fa-search search-icon" id="searchIcon"></i></button>
+        </div>
+      </form>
+    </div>
+    <div class="back">
+    <form action="/logout" method="post">
+        <button type="submit">
+          Log Out
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="box">
+
+    <% newListItems.forEach(function(item){ %>
+      <form action="/delete-list" method="post">
+        <div class="item">
+          <input type="checkbox" name="checkbox" value="<%=item._id%>" onchange="this.form.submit()">
+              <a href="/<%= item.name %>?itemId=<%= item._id %>">
+                <h3 style="cursor: pointer;"><%= item.name %></h3>
+              </a>
+        </div>
+        <input type="hidden" name="listName" value="<%= listTitle %>"></input>
+      </form>
+      <% }) %>
+
+        <form class="item" action="/list" method="post">
+          
+          <input class="task" type="text" name="newItem" placeholder="  New Group" autocomplete="off">
+          <button type="submit" name="list" value="<%- listTitle %>">+</button>
+          
+        </form>
+  </div>
+
+  <%- include("partials/footer") -%>

@@ -1,0 +1,110 @@
+body {
+  background: rgb(0,86,120);
+  background: radial-gradient(circle, rgba(0,86,120,1) 0%, rgba(255,42,110,1) 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1, h3 {
+  margin: 1vh;
+  /* color: #fff; */
+}
+
+.main {
+  width: 400px;
+  height: 61vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
+  border-radius: 5px;
+}
+
+.buttons {
+  margin: 2vh;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  width: 60%;
+  height: 6%;
+  border-radius: 10px;
+
+}
+
+.button {
+  width: max-content;
+  padding: 3px 15px;
+  margin: 10px;
+  color: white;
+  background-color: #00000000;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  border: 1.95px solid black;
+  border-radius: 20px;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover{
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff33;
+  border: 2px solid #ffffff7f;
+  box-shadow: 0px 0px 10px #fff;
+  text-decoration: none;
+}
+
+.formcontainer{
+  background: linear-gradient(135deg, rgba(227, 238, 255, 0.8) 0%, rgba(243, 231, 233, 0.8) 100%); box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+  /* background-color: #ffffff3f; */
+}
+
+.formitem{
+  display: flex;
+  color: white;
+  width: 100%;
+  height: min-content;
+  /* background-color: black; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: large;
+}
+
+input {
+  border: 1.5px solid black;
+  border-radius: 10px;
+  padding: 2px 10px;
+  font-size: medium;
+}
+
+input:focus{
+  outline: none;
+}
+
+.secret-text {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #000;
+}
+
+backbtn{
+  background-color: black !important;
+}
